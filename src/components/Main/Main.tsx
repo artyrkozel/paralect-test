@@ -38,7 +38,7 @@ const Main = () => {
             dispatch(requestRepo(JSON.parse(user), JSON.parse(page)))
             setInitialize(true)
         }
-    }, [])
+    }, [dispatch])
 
     useEffect(() => {
         const user = localStorage.getItem('user')
