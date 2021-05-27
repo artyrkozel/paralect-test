@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/paralect-test/static/css/main.325a6c6f.chunk.css",
+    "main.js": "/paralect-test/static/js/main.f5746ec9.chunk.js",
+    "main.js.map": "/paralect-test/static/js/main.f5746ec9.chunk.js.map",
+    "runtime-main.js": "/paralect-test/static/js/runtime-main.e683e437.js",
+    "runtime-main.js.map": "/paralect-test/static/js/runtime-main.e683e437.js.map",
+    "static/js/2.5faed01d.chunk.js": "/paralect-test/static/js/2.5faed01d.chunk.js",
+    "static/js/2.5faed01d.chunk.js.map": "/paralect-test/static/js/2.5faed01d.chunk.js.map",
+    "index.html": "/paralect-test/index.html",
+    "static/css/main.325a6c6f.chunk.css.map": "/paralect-test/static/css/main.325a6c6f.chunk.css.map",
+    "static/js/2.5faed01d.chunk.js.LICENSE.txt": "/paralect-test/static/js/2.5faed01d.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/paralect-test/static/media/stroke-right.2601e892.svg",
+    "static/media/loader.86e365cf.svg": "/paralect-test/static/media/loader.86e365cf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e683e437.js",
+    "static/js/2.5faed01d.chunk.js",
+    "static/css/main.325a6c6f.chunk.css",
+    "static/js/main.f5746ec9.chunk.js"
+  ]
+}
