@@ -83,14 +83,13 @@
   height: calc(100vh - 72px);
   position: relative;
   &__inner{
-    padding: 28px 0 0;
-    margin-left: 20px;
+    padding: 40px 0 0 20px;
     display: flex;
   }
 }
 
 .user{
-  max-width: 281px;
+  max-width: 292px;
   flex: 1;
   &__avatar{
     border-radius: 50%;
@@ -98,6 +97,7 @@
   }
   &__avatar-container{
     margin-bottom: 30px;
+    max-width: 280px;
   }
   &__info{
 
@@ -133,8 +133,8 @@
 }
 
 .repo{
-  margin-left: 95px;
   position: relative;
+  padding-left: 85px;
   flex: 3;
   &__wrapper{
     min-height: 520px;
@@ -251,15 +251,9 @@
   transform: translate(-50%);
 }
 
-@media screen and(max-width: 992px) {
-  .repo{
-    margin-left: 45px;
-  }
-}
-
 @media screen and(max-width: 768px) {
   .repo{
-    margin-left: 0;
+    padding-left: 0;
     position: static;
     &__count{
       font-size: 27px;
