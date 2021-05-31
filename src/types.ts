@@ -58,7 +58,6 @@ export type ResponseType<T> = {
     statusText: string
 }
 export type RepoItemType = {
-    id: number
     html_url: string
     name: string
     description: string

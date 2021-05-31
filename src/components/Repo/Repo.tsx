@@ -19,7 +19,7 @@ const Repo: React.FC<RepoPropsType> = React.memo(( {repo, count, pageCount, onPa
             <div className="repo__wrapper">
                 {isFetching
                     ? <Loader/>
-                    : repo.map(repo => <RepoItem id={ repo.id } html_url={ repo.html_url } name={ repo.name } description={ repo.description }/>)
+                    : repo.map(repo => <RepoItem key={ repo.id } html_url={ repo.html_url } name={ repo.name } description={ repo.description }/>)
                 }
             </div>
             <div className="repo__pagination">

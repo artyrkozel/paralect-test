@@ -58,7 +58,7 @@ const Main = () => {
                     <User user={ user }/>
                     {repo.length !== 0
                         ? <Repo repo={ repo } count={ totalCount } pageCount={ pageCount } onPageChange={ onPageChange } currentPage={ currentPage }/>
-                        : <Empty/>
+                        : <Empty />
                     }
                 </div>
             </div>

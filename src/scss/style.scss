@@ -59,10 +59,23 @@
 
 .empty{
   background-color: $MainScreen;
-  width: calc(100% - 290px - 85px);
+  padding-left: 85px;
+  width: calc(100% - 290px);
   display: flex;
   align-items: center;
   justify-content: center;
+  &__inner{
+    width: 245px;
+  }
+  &__icon{
+    margin: 0 auto 45px;
+    display: block;
+  }
+  &__description{
+    color: $TextColor;
+    font-size: 22px;
+    text-align: center;
+  }
 }
 
 .main{
@@ -71,6 +84,7 @@
   position: relative;
   &__inner{
     padding: 28px 0 0;
+    margin-left: 20px;
     display: flex;
   }
 }
