@@ -2,7 +2,7 @@ import {gitApi} from "../api/api";
 import {ActionsTypes, DataType, ThunkType} from "../types";
 import {actions} from "../actions/actions";
 
-type InitialType = typeof initialState
+export type InitialType = typeof initialState
 
 let initialState = {
     isFetching: false,
@@ -53,7 +53,7 @@ export default userReducer
 //Thunks
 
 export const requestUser = ( user: string ): ThunkType => {
-    return async (dispatch) => {
+    return async (dispatch ) => {
         try {
             dispatch(actions.setIsFetching(true))
             const userData = await gitApi.getUser(user)
@@ -75,8 +75,8 @@ export const requestRepo = ( user: string, page: number ): ThunkType => {
             dispatch(actions.setIsFetchingRepo(true))
             const userDataJson = await gitApi.getRepo(user, page)
             dispatch(actions.setRepo(userDataJson.data))
-            localStorage.setItem('page', JSON.stringify(page))
             dispatch(actions.setIsFetchingRepo(false))
+            localStorage.setItem('page', JSON.stringify(page))
         } catch (e) {
             dispatch(actions.setIsFetchingRepo(false))
         }
